@@ -1,0 +1,27 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.section__title {
+  color: #172432;
+  font-family: Playfair Display;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 20px;
+  border-bottom: solid 3px #ff7757;
+  width: 227px;
+}
+
+.section__info {
+  color: #767e86;
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 32px;
+}
