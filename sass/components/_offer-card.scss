@@ -63,3 +63,13 @@
   align-self: stretch;
   color: #767e86;
 }
+
+.article--desktop {
+  display: none;
+}
+
+@media (min-width: 400px) {
+  .article--desktop {
+    display: flex;
+  }
+}
