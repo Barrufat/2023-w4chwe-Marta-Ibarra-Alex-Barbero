@@ -1,0 +1,20 @@
+@use "../variables/colors";
+
+.button {
+  padding: 28px 20px;
+  border-radius: 12px;
+
+
+&--light {
+  background-color: colors.$primary-light-color;
+}
+
+&--dark {
+  background-color: colors.$primary-dark-color;
+}
+
+&--big {
+  padding: 20px 40px; 
+  border-radius: 12px; 
+}
+}

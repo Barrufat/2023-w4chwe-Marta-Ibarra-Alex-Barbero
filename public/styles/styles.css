@@ -1,6 +1,24 @@
-.test {
-  color: white;
-  background-color: aqua;
+html {
+  color: black;
+}
+
+button {
+  cursor: pointer;
+}
+
+.button {
+  padding: 28px 20px;
+  border-radius: 12px;
+}
+.button--light {
+  background-color: #ff7757;
+}
+.button--dark {
+  background-color: #172432;
+}
+.button--big {
+  padding: 20px 40px;
+  border-radius: 12px;
 }
 
 /*# sourceMappingURL=styles.css.map */
