@@ -27,6 +27,12 @@ main {
   padding: 80px 16px;
 }
 
+
+button {
+  cursor: pointer;
+}
+
+
 .section {
   display: flex;
   flex-direction: column;
@@ -94,6 +100,32 @@ main {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+
+.button {
+  color: #ffffff;
+  background-color: #ff7757;
+  border-radius: 12px;
+}
+.button--main {
+  padding: 28px 20px;
+}
+.button--view-all {
+  padding: 20px;
+}
+.button--mobile-details {
+  padding: 16px 24px;
+}
+.button--subscribe {
+  padding: 16px 40px;
+}
+.button--desktop-details {
+  padding: 20px 40px;
+}
+.button--uppercase {
+  text-transform: uppercase;
+}
+.button--dark {
+  background-color: #172432;
 }
 
 /*# sourceMappingURL=styles.css.map */

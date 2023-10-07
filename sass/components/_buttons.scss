@@ -1,0 +1,35 @@
+@use "../variables/colors";
+
+.button {
+  color: colors.$neutral-color;
+  background-color: colors.$primary-light-color;
+  border-radius: 12px;
+
+  &--main {
+    padding: 28px 20px;
+  }
+
+  &--view-all {
+    padding: 20px;
+  }
+
+  &--mobile-details {
+    padding: 16px 24px;
+  }
+
+  &--subscribe {
+    padding: 16px 40px;
+  }
+
+  &--desktop-details {
+    padding: 20px 40px;
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  &--dark {
+    background-color: colors.$primary-dark-color;
+  }
+}
