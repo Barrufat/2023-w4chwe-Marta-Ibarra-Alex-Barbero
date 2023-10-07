@@ -1,6 +1,99 @@
-.test {
-  color: white;
-  background-color: aqua;
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+}
+
+main {
+  padding: 80px 16px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.section__title {
+  color: #172432;
+  font-family: Playfair Display;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 20px;
+  border-bottom: solid 3px #ff7757;
+  width: 227px;
+}
+
+.section__info {
+  color: #767e86;
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 32px;
+}
+
+.picture {
+  gap: 17px;
+  align-self: stretch;
+  display: flex;
+  height: 95vw;
+  padding: 40px 20px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  border-radius: 16px;
+  background: linear-gradient(0deg, rgba(255, 119, 87, 0.1) 0%, rgba(255, 119, 87, 0.1) 100%), url(../../images/berlin.png), lightgray 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.picture__footer-title {
+  color: #fff;
+  font-family: Playfair Display;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.picture__subfooter {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.picture__footer-subtitle {
+  flex: 1 0 0;
+  color: #fff;
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 /*# sourceMappingURL=styles.css.map */
