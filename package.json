@@ -1,24 +1,24 @@
 {
   "name": "202309-w4chwe-marta-ibarra-alex-barbero",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "build-style": "sass sass/styles.scss ./public/styles/styles.css",
-    "build-style:dev": "sass --watch sass/styles.scss ./public/styles/styles.css"
+    "build-style:dev": "sass --watch sass/styles.scss ./public/styles/styles.css",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Barrufat/202309-w4chwe-Marta-Ibarra-Alex-Barbero.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Barrufat/202309-w4chwe-Marta-Ibarra-Alex-Barbero/issues"
-  },
-  "homepage": "https://github.com/Barrufat/202309-w4chwe-Marta-Ibarra-Alex-Barbero#readme",
-  "description": "",
   "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
     "sass": "^1.69.0"
+  },
+  "dependencies": {
+    "@commitlint/config-conventional": "^17.7.0",
+    "commitlint": "^17.7.2",
+    "prettier": "^3.0.3"
   }
 }
