@@ -27,9 +27,11 @@ main {
   padding: 80px 16px;
 }
 
+
 button {
   cursor: pointer;
 }
+
 
 .section {
   display: flex;
@@ -98,7 +100,6 @@ button {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}
 
 .button {
   color: #ffffff;
