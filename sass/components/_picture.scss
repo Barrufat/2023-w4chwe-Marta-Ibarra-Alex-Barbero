@@ -1,3 +1,7 @@
+.pictures {
+  width: 100%;
+}
+
 .picture {
   gap: 17px;
   align-self: stretch;
@@ -14,34 +18,68 @@
       rgba(255, 119, 87, 0.1) 0%,
       rgba(255, 119, 87, 0.1) 100%
     ),
-    url(../../images/berlin.png),
     lightgray 50%;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+
+  &--first {
+    background-image: url(../images/berlin.png);
+  }
+
+  &--second {
+    background-image: url(../images/london.png);
+    display: none;
+  }
+
+  &--third {
+    background-image: url(../images/venecia.png);
+    display: none;
+  }
+
+  &__footer-title {
+    color: #fff;
+    font-family: Playfair Display;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  &__subfooter {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+  }
+
+  &__footer-subtitle {
+    flex: 1 0 0;
+    color: #fff;
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 }
 
-.picture__footer-title {
-  color: #fff;
-  font-family: Playfair Display;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
+@media (min-width: 400px) {
+  .pictures {
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+  }
 
-.picture__subfooter {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  align-self: stretch;
-}
+  .picture {
+    width: 30vw;
+    height: 40vw;
 
-.picture__footer-subtitle {
-  flex: 1 0 0;
-  color: #fff;
-  font-family: Rubik;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+    &--second {
+      display: flex;
+    }
+    &--third {
+      display: flex;
+    }
+  }
 }
