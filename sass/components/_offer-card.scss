@@ -1,5 +1,10 @@
 @use "../variables/colors";
 
+.section__articles {
+  display: flex;
+  gap: 32px;
+}
+
 .article__container {
   display: flex;
   flex-direction: column;
@@ -21,6 +26,12 @@
 
 .article__image {
   width: 100%;
+  &--desktop {
+    display: none;
+  }
+  &--mobile {
+    display: flex;
+  }
 }
 
 .article__info {
@@ -68,8 +79,55 @@
   display: none;
 }
 
-@media (min-width: 400px) {
+.section__header__buttons--desktop {
+  display: flex;
+}
+
+.section__header__buttons--mobile {
+  display: none;
+}
+
+@media (min-width: 500px) {
   .article--desktop {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .article__image--mobile {
+    display: none;
+  }
+  .article__image--desktop {
+    display: flex;
+  }
+
+  .section__buttons--mobile {
+    display: flex;
+    gap: 40px;
+  }
+
+  .section__buttons--desktop {
+    display: none;
+  }
+  .section__title--desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 32px;
+  }
+  .section__header--desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-self: stretch;
+    flex-direction: row-reverse;
+  }
+
+  .section__header__buttons--mobile {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
   }
 }

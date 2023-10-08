@@ -1,7 +1,9 @@
 @use "../variables/colors";
 
 main {
-  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 button {
@@ -12,10 +14,6 @@ button {
 input{
 border:none;
 text-align: center;
-
-&::placeholder {
-  color:colors.$primary-light-color
-}
 }
 
 @media (min-width: 400px) {
