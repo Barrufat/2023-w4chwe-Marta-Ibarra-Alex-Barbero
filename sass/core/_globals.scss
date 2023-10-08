@@ -1,9 +1,21 @@
+@use "../variables/colors";
+
 main {
   padding: 0 16px;
 }
 
 button {
   cursor: pointer;
+  border:none;
+}
+
+input{
+border:none;
+text-align: center;
+
+&::placeholder {
+  color:colors.$primary-light-color
+}
 }
 
 @media (min-width: 400px) {

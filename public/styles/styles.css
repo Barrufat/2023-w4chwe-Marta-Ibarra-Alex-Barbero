@@ -29,6 +29,15 @@ main {
 
 button {
   cursor: pointer;
+  border: none;
+}
+
+input {
+  border: none;
+  text-align: center;
+}
+input::placeholder {
+  color: #ff7757;
 }
 
 @media (min-width: 400px) {
@@ -63,6 +72,10 @@ button {
   font-weight: 400;
   line-height: normal;
 }
+.section__sub-title--light {
+  color: #767e86;
+  font-size: 40px;
+}
 .section__info {
   color: #767e86;
   font-family: Rubik;
@@ -71,6 +84,12 @@ button {
   font-weight: 400;
   line-height: normal;
   margin-top: 32px;
+}
+.section__label {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .section__blog-text {
   color: #172432;
@@ -81,23 +100,49 @@ button {
   line-height: 42px;
 }
 .section__buttons {
-  display: none;
-}
-.section__buttons--desktop {
   display: flex;
   gap: 40px;
+}
+.section__buttons--destinations--desktop {
+  display: none;
+}
+.section__buttons--destinations--mobile {
+  display: flex;
+  gap: 40px;
+}
+.section__travelers-buttons {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.section--newsletter {
+  padding: 40px 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+  gap: 60px;
+}
+.section__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
 }
 
 @media (min-width: 500px) {
   .section {
     padding: 40px 0;
   }
-  .section__buttons {
+  .section__buttons--destinations--desktop {
     display: flex;
     gap: 40px;
   }
-  .section__buttons--desktop {
+  .section__buttons--destinations--mobile {
     display: none;
+  }
+  .section__travelers-buttons {
+    justify-content: flex-end;
   }
   .section__header {
     width: 100%;
@@ -222,7 +267,29 @@ button {
   gap: 4px;
 }
 .button--subscribe {
+  width: 100%;
   padding: 16px 40px;
+  border-radius: 12px;
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 32px;
+}
+.button--subscribe--light {
+  padding: 24px 0;
+  color: #ff7757;
+  background-color: #ffe8d4;
+}
+.button--subscribe--light::placeholder {
+  color: #ff7757;
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 32px;
 }
 .button--desktop-details {
   padding: 20px 40px;

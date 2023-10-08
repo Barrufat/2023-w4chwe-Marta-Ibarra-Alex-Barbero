@@ -22,7 +22,32 @@
   }
 
   &--subscribe {
+    width:100%;
     padding: 16px 40px;
+    border-radius:12px;
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 32px;
+
+    &--light{
+      padding:24px 0;
+      color: colors.$primary-light-color;
+      background-color: colors.$secondary-light-color;
+
+      &::placeholder {
+        color:colors.$primary-light-color;
+        font-family: Rubik;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 32px;
+      }
+
+    }
   }
 
   &--desktop-details {
