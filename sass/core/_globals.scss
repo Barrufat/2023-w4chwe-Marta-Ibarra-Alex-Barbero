@@ -1,9 +1,19 @@
+@use "../variables/colors";
+
 main {
-  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 button {
   cursor: pointer;
+  border:none;
+}
+
+input{
+border:none;
+text-align: center;
 }
 
 @media (min-width: 400px) {

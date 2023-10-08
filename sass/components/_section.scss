@@ -1,3 +1,5 @@
+@use "../variables/colors";
+
 .section {
   display: flex;
   padding: 20px 0;
@@ -10,50 +12,88 @@
     color: #172432;
     font-family: Playfair Display;
     font-size: 40px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
     padding-bottom: 20px;
     border-bottom: solid 3px #ff7757;
-    width: 227px;
   }
 
   &__sub-title {
     color: #172432;
     font-family: Playfair Display;
     font-size: 54px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    
+
+    &--light{
+      color: colors.$typography-light;
+      font-size:40px;
+    }
   }
 
   &__info {
     color: #767e86;
     font-family: Rubik;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
     margin-top: 32px;
+  }
+
+  &__label{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   &__blog-text {
     color: #172432;
     font-family: Rubik;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
     line-height: 42px;
   }
 
   &__buttons {
-    display: none;
-  }
 
-  &__buttons--desktop {
     display: flex;
     gap: 40px;
+        
+    &--destinations--desktop {
+      display:none;
+    }
+
+    &--destinations--mobile {
+      display: flex;
+      gap: 40px;
+    }
   }
+
+  &__travelers-buttons{
+    display:flex;
+    width:100%;
+    justify-content: center;
+  }
+
+  &--newsletter{
+    margin-top:100px;
+    padding: 40px 20px ;
+    border-radius: 20px;
+    box-shadow: 0 0 4px 0 rgb(0,0,0,0.3);
+    gap: 60px;
+    width:90%;
+    background-color: white;
+    z-index: 2;
+  }
+
+  &__form{
+    width:90%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+  }
+
 }
 
 @media (min-width: 500px) {
@@ -61,12 +101,19 @@
     padding: 40px 0;
 
     &__buttons {
-      display: flex;
-      gap: 40px;
+
+      &--destinations--desktop {
+        display: flex;
+        gap: 40px;
+      }
+  
+      &--destinations--mobile {
+        display:none;
+      }
     }
 
-    &__buttons--desktop {
-      display: none;
+    &__travelers-buttons{
+      justify-content: flex-end;
     }
 
     &__header {
@@ -92,6 +139,29 @@
       display: flex;
       flex-direction: row;
       align-items: center;
+    }
+
+    &--newsletter{
+      width:90%;
+      display: flex;
+      flex-direction: row;
+      padding: 60px 80px;
+      justify-content: flex-start;
+      gap: 50px;
+    }
+
+    &__sub-title--light{
+      width:50%;
+      font-size:64px;
+    }
+
+    &__form{
+      width:50%;
+      display: flex;
+      flex-direction: row;
+      gap: 32px;
+      align-items: flex-end;
+      justify-content: flex-end;
     }
   }
 }

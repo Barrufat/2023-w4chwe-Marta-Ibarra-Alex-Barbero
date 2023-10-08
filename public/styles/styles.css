@@ -24,11 +24,19 @@ a {
 }
 
 main {
-  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 button {
   cursor: pointer;
+  border: none;
+}
+
+input {
+  border: none;
+  text-align: center;
 }
 
 @media (min-width: 400px) {
@@ -48,56 +56,88 @@ button {
   color: #172432;
   font-family: Playfair Display;
   font-size: 40px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   padding-bottom: 20px;
   border-bottom: solid 3px #ff7757;
-  width: 227px;
 }
 .section__sub-title {
   color: #172432;
   font-family: Playfair Display;
   font-size: 54px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
+}
+.section__sub-title--light {
+  color: #767e86;
+  font-size: 40px;
 }
 .section__info {
   color: #767e86;
   font-family: Rubik;
   font-size: 18px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   margin-top: 32px;
+}
+.section__label {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .section__blog-text {
   color: #172432;
   font-family: Rubik;
   font-size: 18px;
-  font-style: normal;
   font-weight: 400;
   line-height: 42px;
 }
 .section__buttons {
-  display: none;
-}
-.section__buttons--desktop {
   display: flex;
   gap: 40px;
+}
+.section__buttons--destinations--desktop {
+  display: none;
+}
+.section__buttons--destinations--mobile {
+  display: flex;
+  gap: 40px;
+}
+.section__travelers-buttons {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.section--newsletter {
+  margin-top: 100px;
+  padding: 40px 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+  gap: 60px;
+  width: 90%;
+  background-color: white;
+  z-index: 2;
+}
+.section__form {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
 }
 
 @media (min-width: 500px) {
   .section {
     padding: 40px 0;
   }
-  .section__buttons {
+  .section__buttons--destinations--desktop {
     display: flex;
     gap: 40px;
   }
-  .section__buttons--desktop {
+  .section__buttons--destinations--mobile {
     display: none;
+  }
+  .section__travelers-buttons {
+    justify-content: flex-end;
   }
   .section__header {
     width: 100%;
@@ -119,6 +159,26 @@ button {
     display: flex;
     flex-direction: row;
     align-items: center;
+  }
+  .section--newsletter {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    padding: 60px 80px;
+    justify-content: flex-start;
+    gap: 50px;
+  }
+  .section__sub-title--light {
+    width: 50%;
+    font-size: 64px;
+  }
+  .section__form {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: flex-end;
+    justify-content: flex-end;
   }
 }
 .pictures {
@@ -204,7 +264,7 @@ button {
   }
 }
 .button {
-  color: #ffffff;
+  color: #fff;
   background-color: #ff7757;
   border-radius: 12px;
 }
@@ -222,7 +282,29 @@ button {
   gap: 4px;
 }
 .button--subscribe {
-  padding: 16px 40px;
+  width: 100%;
+  padding: 24px 40px;
+  border-radius: 12px;
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 32px;
+}
+.button--subscribe--light {
+  padding: 24px 0;
+  color: #ff7757;
+  background-color: #ffe8d4;
+}
+.button--subscribe--light::placeholder {
+  color: #ff7757;
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 32px;
 }
 .button--desktop-details {
   padding: 20px 40px;
@@ -321,7 +403,7 @@ button {
   display: none;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 500px) {
   .article--desktop {
     display: flex;
     flex-direction: column;
@@ -391,8 +473,6 @@ button {
   color: #767e86;
   font-family: Rubik;
   font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 23px;
   width: 100%;
 }
@@ -400,16 +480,12 @@ button {
   color: #767e86;
   font-family: Playfair Display;
   font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
   line-height: normal;
 }
 .traveler__subtitle {
   color: #767e86;
   font-family: Rubik;
   font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
   line-height: normal;
 }
 
@@ -423,6 +499,12 @@ button {
     display: flex;
   }
 }
+.footer {
+  margin-top: -10vw;
+  height: 30vw;
+  background-color: #172432;
+}
+
 .section__card-planners-img {
   display: flex;
   height: 320px;
