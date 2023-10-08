@@ -56,20 +56,15 @@ input {
   color: #172432;
   font-family: Playfair Display;
   font-size: 40px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   padding-bottom: 20px;
   border-bottom: solid 3px #ff7757;
-  width: 227px;
 }
 .section__sub-title {
   color: #172432;
   font-family: Playfair Display;
   font-size: 54px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 .section__sub-title--light {
   color: #767e86;
@@ -79,9 +74,7 @@ input {
   color: #767e86;
   font-family: Rubik;
   font-size: 18px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   margin-top: 32px;
 }
 .section__label {
@@ -94,7 +87,6 @@ input {
   color: #172432;
   font-family: Rubik;
   font-size: 18px;
-  font-style: normal;
   font-weight: 400;
   line-height: 42px;
 }
@@ -481,8 +473,6 @@ input {
   color: #767e86;
   font-family: Rubik;
   font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 23px;
   width: 100%;
 }
@@ -490,16 +480,12 @@ input {
   color: #767e86;
   font-family: Playfair Display;
   font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
   line-height: normal;
 }
 .traveler__subtitle {
   color: #767e86;
   font-family: Rubik;
   font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
   line-height: normal;
 }
 
@@ -517,6 +503,80 @@ input {
   margin-top: -10vw;
   height: 30vw;
   background-color: #172432;
+}
+
+.section__card-planners-img {
+  display: flex;
+  height: 320px;
+  padding: 40px 24px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  align-self: stretch;
+  border-radius: 26px;
+}
+
+.section__card-planners-text {
+  display: flex;
+  padding: 20px 0px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+}
+
+.section__card-planners-tour {
+  color: #172432;
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.section__card-planners-price {
+  color: #172432;
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.section__card-tour-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.section__card-planners-city {
+  color: #172432;
+  font-family: Playfair Display;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.section__card-planners-days {
+  color: #172432;
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.star-color {
+  color: yellow;
+}
+
+.ratings {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 /*# sourceMappingURL=styles.css.map */
