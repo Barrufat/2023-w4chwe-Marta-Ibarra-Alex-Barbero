@@ -37,6 +37,10 @@
     display: none;
   }
 
+  &--blog {
+    background-image: url(../images/ourblog.png);
+  }
+
   &__footer-title {
     color: #fff;
     font-family: Playfair Display;
@@ -64,7 +68,7 @@
   }
 }
 
-@media (min-width: 400px) {
+@media (min-width: 500px) {
   .pictures {
     display: flex;
     gap: 32px;
@@ -72,14 +76,26 @@
   }
 
   .picture {
-    width: 30vw;
-    height: 40vw;
+    &--first {
+      display: flex;
+      width: 30vw;
+      height: 40vw;
+    }
 
     &--second {
       display: flex;
+      width: 30vw;
+      height: 40vw;
     }
+
     &--third {
       display: flex;
+      width: 30vw;
+      height: 40vw;
+    }
+
+    &--blog {
+      height: 50vw;
     }
   }
 }
